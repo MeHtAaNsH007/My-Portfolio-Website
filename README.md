@@ -7,9 +7,9 @@ A cinematic, superhero-inspired dark-themed personal portfolio website built wit
 A clean, responsive, superhero-inspired dark-themed personal portfolio built with HTML and CSS.
 
  Features
-- Profile:** Academic background, bio, and career goals.
+- Profile: Academic background, bio, and career goals.
 - Skills: Programming languages, tools, and technical arsenal.
-- Projects:** Showcases real-world builds with direct GitHub links.
+- Projects: Showcases real-world builds with direct GitHub links.
 - Certifications: Verified course certificates with view and download options.
 - Contact: Fully functional contact form powered by Web3Forms.
 
