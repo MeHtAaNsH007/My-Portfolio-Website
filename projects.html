@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ansh Mehta | Projects</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .projects-page-header {
+        margin-bottom: 3.5rem;
+        text-align: left;
+    }
+    .projects-story-headline {
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+    .projects-story-lead {
+        font-size: 1.15rem;
+        color: #94a3b8;
+    }
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2.5rem;
+    }
+    .project-card {
+        background-color: #0d0d0d;
+        padding: 2.5rem;
+        border-radius: 12px;
+        border: 1px solid #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.2s, border-color 0.2s;
+    }
+    .project-card:hover {
+        transform: translateY(-4px);
+        border-color: #ef4444;
+    }
+    .project-card h3 {
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+    }
+    .project-card p {
+        color: #cbd5e1;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
+    .project-features {
+        margin-bottom: 1.5rem;
+    }
+    .project-features h4 {
+        font-size: 0.95rem;
+        color: #ef4444;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+    }
+    .project-features ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .project-features li {
+        color: #94a3b8;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+        position: relative;
+        padding-left: 1rem;
+    }
+    .project-features li::before {
+        content: '•';
+        position: absolute;
+        left: 0;
+        color: #ef4444;
+    }
+    .project-tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-bottom: 1.75rem;
+    }
+    .project-tags span {
+        background-color: #050505;
+        color: #ef4444;
+        font-size: 0.85rem;
+        padding: 0.3rem 0.75rem;
+        border-radius: 6px;
+        border: 1px solid #1f1f1f;
+    }
+    .project-link {
+        display: inline-block;
+        background-color: #ef4444;
+        color: #ffffff;
+        padding: 0.75rem 1.25rem;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-align: center;
+        transition: background-color 0.2s;
+    }
+    .project-link:hover {
+        background-color: #dc2626;
+    }
+</style>
+</head>
+<body>
+<nav class="top-nav">
+    <a href="index.html">Profile</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html" class="active">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main class="page-container">
+    <section class="projects-page-header">
+        <h1 class="projects-story-headline">Turning Ideas Into Reality Through Code</h1>
+        <p class="projects-story-lead">A collection of full-stack platforms, embedded hardware prototypes, and utility tools built to solve real-world problems.</p>
+    </section>
+
+    <div class="projects-grid">
+        <div class="project-card">
+            <div>
+                <h3>Arduino-Based Touchless Retrofit Tap</h3>
+                <p>A low-cost, non-invasive smart tap attachment designed to convert standard manual taps into automated water conservation systems, reducing water waste by 65%.</p>
+                <div class="project-features">
+                    <h4>Core Features</h4>
+                    <ul>
+                        <li>WHO Hygiene Timer (20-second standard)</li>
+                        <li>Emergency Safety Cut-Off (60-second limit)</li>
+                        <li>I2C LCD Real-Time Data Analytics</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span>Arduino Uno</span>
+                    <span>Embedded C++</span>
+                    <span>Tinkercad</span>
+                    <span>Hardware</span>
+                </div>
+            </div>
+            <a href="https://github.com/MeHtAaNsH007/Arduino-Based-Touchless-Retrofit-Tap" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <div>
+                <h3>Progath.ai (Learning Path Generator)</h3>
+                <p>An AI-powered full-stack platform that eliminates the paradox of choice by transforming overwhelming topics into structured, week-by-week daily learning plans using Generative AI.</p>
+                <div class="project-features">
+                    <h4>Core Highlights</h4>
+                    <ul>
+                        <li>Custom paths targeting strengths & weaknesses</li>
+                        <li>Structured step-by-step guidance for beginners</li>
+                        <li>Seamless Vercel deployment & modern UI/UX</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>Tailwind CSS</span>
+                    <span>Google Gemini</span>
+                    <span>Supabase</span>
+                </div>
+            </div>
+            <a href="https://github.com/MeHtAaNsH007/pathmapgenerator" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+
+        <div class="project-card">
+            <div>
+                <h3>Coding Playground & Mini-Projects</h3>
+                <p>A repository of utility scripts and logic-based sandbox programs built to refine syntax, master algorithms, and practice clean structural programming outside coursework.</p>
+                <div class="project-features">
+                    <h4>Included Modules</h4>
+                    <ul>
+                        <li>Average Score & Currency Calculators</li>
+                        <li>Playlist Creator & Shopping List Manager</li>
+                        <li>Simple Number Guess & Text Analyzer</li>
+                    </ul>
+                </div>
+                <div class="project-tags">
+                    <span>Python</span>
+                    <span>Data Structures</span>
+                    <span>Algorithms</span>
+                    <span>Logic Sandbox</span>
+                </div>
+            </div>
+            <a href="https://github.com/MeHtAaNsH007/NewWay.py" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+    </div>
+</main>
+</body>
+</html>

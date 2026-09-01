@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>my portfolio | ansh mehta</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .portfolio-main-title {
+        font-size: 3.5rem;
+        font-weight: 900;
+        letter-spacing: -0.04em;
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 3.5rem;
+        text-transform: uppercase;
+        border-bottom: 2px solid #1f1f1f;
+        padding-bottom: 1.5rem;
+    }
+    .portfolio-main-title span {
+        color: #ef4444;
+    }
+    .profile-hero-split {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 4rem;
+        margin-bottom: 6rem;
+    }
+    .profile-hero-text {
+        flex: 1;
+    }
+    .profile-story-headline {
+        font-size: 3rem;
+        font-weight: 800;
+        letter-spacing: -0.03em;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        line-height: 1.2;
+    }
+    .profile-story-lead {
+        font-size: 1.15rem;
+        color: #94a3b8;
+    }
+    .profile-hero-card {
+        flex: 0 0 auto;
+        text-align: center;
+        background-color: #0d0d0d;
+        padding: 2.5rem;
+        border-radius: 12px;
+        border: 1px solid #1f1f1f;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+    }
+    .profile-img-large {
+        width: 310px;
+        height: 410px;
+        object-fit: cover;
+        border-radius: 12px;
+        border: 4px solid #ef4444;
+        box-shadow: 0 0 25px rgba(239, 68, 68, 0.3);
+        margin-bottom: 1.5rem;
+    }
+    .profile-name-title {
+        font-size: 2.8rem;
+        font-weight: 800;
+        letter-spacing: -0.05em;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+    }
+    .profile-roles {
+        font-size: 1.75rem;
+        font-weight: 500;
+        color: #ef4444;
+    }
+    .journey-section {
+        margin-bottom: 6rem;
+    }
+    .story-timeline {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .story-card {
+        background-color: #0d0d0d;
+        padding: 2.5rem;
+        border-radius: 12px;
+        border: 1px solid #1f1f1f;
+    }
+    .story-tag {
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #ef4444;
+        background-color: rgba(239, 68, 68, 0.1);
+        padding: 0.35rem 0.85rem;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+    .story-card h3 {
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+        font-weight: 700;
+    }
+    .story-metric {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #fca5a5;
+        margin-bottom: 1rem;
+    }
+    .story-card p {
+        color: #cbd5e1;
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+    .focus-section {
+        margin-bottom: 6rem;
+    }
+    .focus-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2.5rem;
+    }
+    .focus-item {
+        background-color: #0d0d0d;
+        padding: 2.5rem;
+        border-radius: 12px;
+        border: 1px solid #1f1f1f;
+        transition: transform 0.2s, border-color 0.2s;
+    }
+    .focus-item:hover {
+        transform: translateY(-4px);
+        border-color: #ef4444;
+    }
+    .focus-icon {
+        font-size: 2.2rem;
+        margin-bottom: 1.25rem;
+    }
+    .focus-item h3 {
+        color: #ffffff;
+        font-size: 1.35rem;
+        margin-bottom: 0.75rem;
+        font-weight: 700;
+    }
+    .focus-item p {
+        color: #cbd5e1;
+        font-size: 1.05rem;
+        line-height: 1.7;
+    }
+    .career-goal-section {
+        margin-bottom: 4rem;
+    }
+    .goal-highlight-box {
+        background-color: #0d0d0d;
+        padding: 3rem;
+        border-radius: 12px;
+        border-left: 6px solid #ef4444;
+        border-top: 1px solid #1f1f1f;
+        border-right: 1px solid #1f1f1f;
+        border-bottom: 1px solid #1f1f1f;
+        margin-top: 2rem;
+    }
+    .goal-tag {
+        display: inline-block;
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #ef4444;
+        background-color: rgba(239, 68, 68, 0.1);
+        padding: 0.35rem 0.85rem;
+        border-radius: 6px;
+        margin-bottom: 1rem;
+        border: 1px solid rgba(239, 68, 68, 0.2);
+    }
+    .goal-highlight-box h3 {
+        font-size: 1.75rem;
+        color: #ffffff;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+    .goal-highlight-box p {
+        color: #cbd5e1;
+        font-size: 1.15rem;
+        line-height: 1.8;
+    }
+</style>
+</head>
+<body>
+<nav class="top-nav">
+    <a href="index.html" class="active">Profile</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<main class="page-container">
+    <h1 class="portfolio-main-title">Ansh Mehta <span>| Portfolio</span></h1>
+
+    <section class="profile-hero-split">
+        <div class="profile-hero-text">
+            <h2 class="profile-story-headline">Turning Ideas Into Real-World Impact Through Code</h2>
+            <p class="profile-story-lead">My journey in technology is driven by curiosity, precision, and a relentless desire to build intelligent systems that solve complex problems.</p>
+        </div>
+        <div class="profile-hero-card">
+            <img src="assets/images/profile.png" alt="Ansh Mehta" class="profile-img-large">
+            <h3 class="profile-name-title">Ansh Mehta</h3>
+            <h4 class="profile-roles">B.Tech CSE AIML</h4>
+        </div>
+    </section>
+
+    <section class="journey-section">
+        <h2 class="section-title">Journey & Academic Background</h2>
+        <p class="section-subtitle">The foundation of my engineering mindset, built through rigorous academics and continuous growth.</p>
+        
+        <div class="story-timeline">
+            <div class="story-card">
+                <span class="story-tag">High School Foundation</span>
+                <h3>Delhi Public School</h3>
+                <p class="story-metric">Score: 81.5%</p>
+                <p>Completed my senior secondary education with a strong emphasis on analytical reasoning, mathematics, and core sciences, laying the groundwork for a future in technology.</p>
+            </div>
+
+            <div class="story-card">
+                <h3>Bachelor of Technology in Computer Science & Engineering (AI & ML)</h3>
+                <p class="story-metric">Lovely Professional University, Punjab | Aug 2025 - Present &bull; CGPA: 8.33</p>
+                <p>Stepping into university life marked the true acceleration of my passion. In my first year, I secured a solid 8.33 CGPA while immersing myself in core computing foundations, data structures, algorithms, and artificial intelligence architectures.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="focus-section">
+        <h2 class="section-title">What Drives My Work</h2>
+        <p class="section-subtitle">Core values and methodologies that guide every project and problem I tackle.</p>
+        <div class="focus-grid">
+            <div class="focus-item">
+                <div class="focus-icon">🎯</div>
+                <h3>Analytical Problem-Solving</h3>
+                <p>Approaching technical challenges logically, breaking down complex barriers, and engineering robust, scalable solutions.</p>
+            </div>
+            <div class="focus-item">
+                <div class="focus-icon">⚡</div>
+                <h3>Detail-Oriented Precision</h3>
+                <p>Maintaining high standards of quality and accuracy across every line of code, system architecture, and UI layout.</p>
+            </div>
+            <div class="focus-item">
+                <div class="focus-icon">💡</div>
+                <h3>Structured Communication</h3>
+                <p>Expressing technical concepts clearly and collaborating effectively to turn collective visions into reality.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="career-goal-section">
+        <h2 class="section-title">My Career Goal</h2>
+        <p class="section-subtitle">The future vision and impact I am actively building towards.</p>
+        <div class="goal-highlight-box">
+            <span class="goal-tag">Future Vision</span>
+            <h3>I Aspire to be a Machine Learning Engineer</h3>
+            <p>My ultimate vision is to build intelligent, adaptive, and scalable systems that create tangible real-world impact. By bridging the gap between full-stack integration and advanced AI models, I aim to shape the future of smart automation and intelligent software solutions.</p>
+        </div>
+    </section>
+</main>
+</body>
+</html>
